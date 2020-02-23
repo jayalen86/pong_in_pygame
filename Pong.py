@@ -2,15 +2,15 @@ import pygame
 
 pygame.mixer.pre_init(44100, -16, 1, 512) #used to fix sound delay
 pygame.init()
-pongball = pygame.image.load('pongball.png')
+pongball = pygame.image.load('images/pongball.png')
 pygame.display.set_icon(pongball)
 pygame.display.set_caption('Pong!')
 screen_height = 425
 screen_width = 500
 screen = pygame.display.set_mode((screen_width, screen_height))
 clock = pygame.time.Clock()
-pongsound = pygame.mixer.Sound("pongsound.wav")
-failsound = pygame.mixer.Sound("pongfail.wav")
+pongsound = pygame.mixer.Sound("sounds/pongsound.wav")
+failsound = pygame.mixer.Sound("sounds/pongfail.wav")
 gameover = False
 
 class Paddle():
